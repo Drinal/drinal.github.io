@@ -542,7 +542,7 @@
 		
 		<br>
 		<br>
-		<p>Notes: A weapons max value allowable is 351. (when going online, anything higher than 351 is devalued to 100, as tested by SWD) The highest KNOWN value is 342. A weapon can only have one negative mod. Using a "powerful" negative mod allows you to throw in extra mods and stars while keeping the value low.
+		<p>Notes: A weapons max value allowable is 351. (when going online, anything higher than 351 is devalued to 100, as tested by SWD) This would make 351 the absolute highest allowed, but must be so rare to the point of not even finding such a weapon. The highest KNOWN value is 342. A weapon can only have one negative mod. Using a "powerful" negative mod allows you to throw in extra mods and stars while keeping the value low.
 		<p>
 		This product originally brought by pika7. Now reuploaded by riskit4biskit. (DCandDzwc) Extra credits to gamefaqs for any help with the project.</p>
 		<br>
@@ -550,8 +550,6 @@
 		<hr>
 		<hr>
 		<br>
-		<p> Weapon Fusion calculator text below might be a little buggy.
-		</p>
 		
 		<script type="text/javascript">
 			
@@ -1405,7 +1403,7 @@ function makelist()
 	else{
 		str = "<TABLE border=1 cellpadding=6 cellspacing=0>";
 		str += "<tr>";
-		str += "<td>There is nothing that meets the criteria.</td>";
+		str += "<td>Try again NOOB!!</td>";
 		str += "</tr>";
 		str += "</table>";
 	}
@@ -1495,21 +1493,21 @@ function init(){
 <body onLoad="init()">
  
 <FORM name="Src0">
-	Weapon A：
+	Weapon A
 	<SELECT name="list"></SELECT>
 </FORM>
 <hr noshade="noshade">
  
 <FORM name="Src1">
-	Weapon B：
+	Weapon B
 	<SELECT name="list"></SELECT>
 </FORM>
 <hr noshade="noshade">
  
 <FORM name="Dist">
-	Result　：
+	Result or desired weapon
 	<SELECT name="list"></SELECT><BR>
-	From Weapon ID(s)：
+	From Weapon ID(s)
 	<input type="checkbox" name="ID" onClick="check_ctrl(name, 0)" checked=true>Unspecified
 	<input type="checkbox" name="ID" onClick="check_ctrl(name, 1)">1
 	<input type="checkbox" name="ID" onClick="check_ctrl(name, 2)">2
@@ -1525,7 +1523,7 @@ function init(){
 	<input type="checkbox" name="ID" onClick="check_ctrl(name,10)">12
 	<BR>
 	<hr>
-	From Weapon Class(es)：
+	From Weapon Class(s)
 	<input type="checkbox" name="type" onClick="check_ctrl(name,0)" checked=true>Unspecified
 	<input type="checkbox" name="type" onClick="check_ctrl(name,1)">Blade
 	<input type="checkbox" name="type" onClick="check_ctrl(name,2)">Staff
@@ -1538,7 +1536,7 @@ function init(){
 	<input type="checkbox" name="type" onClick="check_ctrl(name,9)">Arm
 	<BR>
 	<hr>
-	From Fusion Group(s)：
+	From Fusion Group(s)
 	<input type="checkbox" name="group" onClick="check_ctrl(name,0)" checked=true>Unspecified
 	<input type="checkbox" name="group" onClick="check_ctrl(name,1)">1
 	<input type="checkbox" name="group" onClick="check_ctrl(name,2)">2
@@ -1550,7 +1548,7 @@ function init(){
  
 <input type="button" value="Calculate List" onclick="makelist()"
 >
-<div id="res">Results will be displayed here.</div>
+<div id="res">Group 1 favors stars while group 5 favors modifiers. Group 3 is best for both mods and stars.</div>
 <Div Align="right"><font size=2 color="#D0D0D0">Reuploaded by riskit4biskit</font></Div>
 <script type="text/javascript"><!--
 var fhp_c_pc = navigator.userAgent.toLowerCase();
@@ -1569,9 +1567,6 @@ fhp_wt = '<' + 'script src="http://web.fc2.com/header.php?cs=' + fhp_cs + '&dm='
 fhp_wt += '<' + 'script src="http://web.fc2.com/footer/footer.php?cs=' + fhp_cs + '&dm=' + fhp_dm + '"><' + '/script>';
 document.write(fhp_wt);
 //--></script>
-<!-- FC2, inc.-->
-<img src="http://media.fc2.com/counter_img.php?id=50" style="visibility:hidden" alt="inserted by FC2 system" width="0" height="0" />
-<!-- FC2, inc.-->
 
 	</body>
 </html>
