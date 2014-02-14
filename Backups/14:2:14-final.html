@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html>
+
+		<title>riskit4biskits Calculator Compilation</title>
+	</head>
+	
+	<body> <!-- bgcolor="#607080" -->
+	<center><h1>Kid Icarus: Uprising</h1>
+	<h2>Ultimate Calculator Compilation</h2>
+	<a href="https://github.com/Drinal/drinal.github.io" target="_blank"><img src="http://www.technobuffalo.com/wp-content/uploads/2013/11/Kid-Icarus-Uprising.jpg" width="304" height="228"></a>
+	<h3>Current Version: 5.0.0</h3>
+Page Views: <a href="https://github.com/Drinal/drinal.github.io/" target="_blank"><img src="http://www.e-zeeinternet.com/count.php?page=1038608&style=default&nbdigits=8&reloads=1" alt="Free Hit Counter" border="0" ></a></center>
+
+	<hr>
+	<hr>
+	<hr>
+	<center><p>A weapon fusion grid link can be found <a href="http://orbitars.files.wordpress.com/2012/08/orbitars-weapon-fusion-grid.pdf" target="_blank">here</a> or <a href="https://sites.google.com/site/drinalsrealm/applications/fusion-grid.pdf?attredirects=0&d=1" target="_blank">here</a></center>
+	<hr>
+	<hr>
+	<hr>
+	<center><font size="30">Weapon Value Calculator</font></center>
+	<hr>
+		<center><form name="form">
+
+			<table>
+				<tbody><tr align="center">
+				<td width="150px"><b>Ranged Stars</b></td>
+					<td width="25px"><input name="ranged" value="0" id="ranged0" checked="checked" onclick="show_ranged_value(0)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="1" id="ranged0.5" onclick="show_ranged_value(1)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="2" id="ranged1" onclick="show_ranged_value(2)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="3" id="ranged1.5" onclick="show_ranged_value(3)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="4" id="ranged2" onclick="show_ranged_value(4)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="5" id="ranged2.5" onclick="show_ranged_value(5)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="6" id="ranged3" onclick="show_ranged_value(6)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="7" id="ranged3.5" onclick="show_ranged_value(7)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="8" id="ranged4" onclick="show_ranged_value(8)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="9" id="ranged4.5" onclick="show_ranged_value(9)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="10" id="ranged5" onclick="show_ranged_value(10)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="11" id="ranged5.5" onclick="show_ranged_value(11)" type="radio"></td>
+					<td width="25px"><input name="ranged" value="12" id="ranged6" onclick="show_ranged_value(12)" type="radio"></td>
+				</tr>
+				<tr align="center">
+					<td><span id="rangedValue">0</span></td>
+					<td>0</td>
+					<td>0.5</td>
+					<td>1</td>
+					<td>1.5</td>
+					<td>2</td>
+					<td>2.5</td>
+					<td>3</td>
+					<td>3.5</td>
+					<td>4</td>
+					<td>4.5</td>
+					<td>5</td>
+					<td>5.5</td>
+					<td>6</td>
+				</tr>
+			</tbody></table><br><table>
+
+		
+
+			</table><table>
+				<tbody><tr align="center">
+					<td width="150px"><b>Melee Stars</b></td>
+					<td width="25px"><input name="melee" value="0" id="melee0" checked="checked" onclick="show_melee_value(0)" type="radio"></td>
+					<td width="25px"><input name="melee" value="1" id="melee0.5" onclick="show_melee_value(1)" type="radio"></td>
+					<td width="25px"><input name="melee" value="2" id="melee1" onclick="show_melee_value(2)" type="radio"></td>
+					<td width="25px"><input name="melee" value="3" id="melee1.5" onclick="show_melee_value(3)" type="radio"></td>
+					<td width="25px"><input name="melee" value="4" id="melee2" onclick="show_melee_value(4)" type="radio"></td>
+					<td width="25px"><input name="melee" value="5" id="melee2.5" onclick="show_melee_value(5)" type="radio"></td>
+					<td width="25px"><input name="melee" value="6" id="melee3" onclick="show_melee_value(6)" type="radio"></td>
+					<td width="25px"><input name="melee" value="7" id="melee3.5" onclick="show_melee_value(7)" type="radio"></td>
+					<td width="25px"><input name="melee" value="8" id="melee4" onclick="show_melee_value(8)" type="radio"></td>
+					<td width="25px"><input name="melee" value="9" id="melee4.5" onclick="show_melee_value(9)" type="radio"></td>
+					<td width="25px"><input name="melee" value="10" id="melee5" onclick="show_melee_value(10)" type="radio"></td>
+					<td width="25px"><input name="melee" value="11" id="melee5.5" onclick="show_melee_value(11)" type="radio"></td>
+					<td width="25px"><input name="melee" value="12" id="melee6" onclick="show_melee_value(12)" type="radio"></td>
+				</tr>
+				<tr align="center">
+					<td><span id="meleeValue">0</span></td>
+					<td>0</td>
+					<td>0.5</td>
+					<td>1</td>
+					<td>1.5</td>
+					<td>2</td>
+					<td>2.5</td>
+					<td>3</td>
+					<td>3.5</td>
+					<td>4</td>
+					<td>4.5</td>
+					<td>5</td>
+					<td>5.5</td>
+					<td>6</td>
+				</tr>
+			</tbody></table><br><br><table>
+
+		<hr>
+		<hr>
+		<hr>
+		
+
+			</table><table cellpadding="5px">
+				<tbody><tr>
+					<td align="center" width="150px"><b>Modifier 1</b></td>
+					<td>
+						<select name="trait1" id="trait1" onchange='validate("1")'>
+							<option value="0" selected="selected">None</option>
+							<option value="5">Bkwd-Dash Ch. Shot</option>
+							<option value="10">Bkwd-Dash Cont. Fire</option>
+							<option value="35">Burning</option>
+							<option value="34">Confusion</option>
+							<option value="2">Dash Ch. Shot</option>
+							<option value="7">Dash Cont. Fire</option>
+							<option value="28">Effect Duration</option>
+							<option value="26">Evasion</option>
+							<option value="36">Freezing</option>
+							<option value="41">Full Health Boost</option>
+							<option value="3">Fwd-Dash Ch. Shot</option>
+							<option value="8">Fwd-Dash Cont. Fire</option>
+							<option value="15">Health</option>
+							<option value="44">Heart Bonus</option>
+							<option value="43">In-peril Attack Boost</option>
+							<option value="42">In-peril Auto-dodge</option>
+							<option value="13">Item Attack</option>
+							<option value="18">Knockback Defense</option>
+							<option value="19">Knockback Recovery</option>
+							<option value="11">Melee Combo</option>
+							<option value="12">Melee Dash Attack</option>
+							<option value="17">Melee Defense</option>
+							<option value="21">Overall Defense</option>
+							<option value="30">Paralysis</option>
+							<option value="32">Petrification</option>
+							<option value="29">Poison</option>
+							<option value="14">Power Attack</option>
+							<option value="27">Recovery Effect</option>
+							<option value="24">Running Speed</option>	
+							<option value="40">Self Injury</option>
+							<option value="33">Shaking</option>
+							<option value="39">Shot Cancellation</option>
+							<option value="16">Shot Defense</option>
+							<option value="38">Shot Homing</option>
+							<option value="37">Shot Range</option>
+							<option value="4">Side-Dash Ch. Shot</option>
+							<option value="9">Side-Dash Cont. Fire</option>
+							<option value="23">Speed</option>
+							<option value="22">Stamina</option>
+							<option value="6">Standing Cont. Fire</option>
+							<option value="1">Standing Ch. Shot</option>
+							<option value="20">Status Resistance</option>						
+							<option value="25">Walking Speed</option>
+							<option value="31">Weakening</option>
+						</select>
+					</td>
+					<td>
+						<select name="trait1value" ,="" id="trait1value" onchange='validate("1")'>
+							<option value="-1" selected="selected">--</option>
+							<option value="4">+1</option>
+							<option value="5">+2</option>
+							<option value="6">+3</option>
+							<option value="7">+4</option>
+							<option value="8">+5</option>
+							<option value="9">+6</option>
+							<option value="10">+7</option>
+							<option value="11">+8</option>
+							<option value="3">-1</option>
+							<option value="2">-2</option>
+							<option value="1">-3</option>
+							<option value="0">-4</option>
+						</select>
+					</td>
+					<td><span id="trait1err" style="color:red"></span></td>
+				</tr>
+				
+				<tr>
+					<td align="center" width="150px"><b>Modifier 2</b></td>
+					<td>
+						<select name="trait2" id="trait2" onchange='validate("2")'>
+							<option value="0" selected="selected">None</option>
+							<option value="5">Bkwd-Dash Ch. Shot</option>
+							<option value="10">Bkwd-Dash Cont. Fire</option>
+							<option value="35">Burning</option>
+							<option value="34">Confusion</option>
+							<option value="2">Dash Ch. Shot</option>
+							<option value="7">Dash Cont. Fire</option>
+							<option value="28">Effect Duration</option>
+							<option value="26">Evasion</option>
+							<option value="36">Freezing</option>
+							<option value="41">Full Health Boost</option>
+							<option value="3">Fwd-Dash Ch. Shot</option>
+							<option value="8">Fwd-Dash Cont. Fire</option>
+							<option value="15">Health</option>
+							<option value="44">Heart Bonus</option>
+							<option value="43">In-peril Attack Boost</option>
+							<option value="42">In-peril Auto-dodge</option>
+							<option value="13">Item Attack</option>
+							<option value="18">Knockback Defense</option>
+							<option value="19">Knockback Recovery</option>
+							<option value="11">Melee Combo</option>
+							<option value="12">Melee Dash Attack</option>
+							<option value="17">Melee Defense</option>
+							<option value="21">Overall Defense</option>
+							<option value="30">Paralysis</option>
+							<option value="32">Petrification</option>
+							<option value="29">Poison</option>
+							<option value="14">Power Attack</option>
+							<option value="27">Recovery Effect</option>
+							<option value="24">Running Speed</option>	
+							<option value="40">Self Injury</option>
+							<option value="33">Shaking</option>
+							<option value="39">Shot Cancellation</option>
+							<option value="16">Shot Defense</option>
+							<option value="38">Shot Homing</option>
+							<option value="37">Shot Range</option>
+							<option value="4">Side-Dash Ch. Shot</option>
+							<option value="9">Side-Dash Cont. Fire</option>
+							<option value="23">Speed</option>
+							<option value="22">Stamina</option>
+							<option value="6">Standing Cont. Fire</option>
+							<option value="1">Standing Ch. Shot</option>
+							<option value="20">Status Resistance</option>						
+							<option value="25">Walking Speed</option>
+							<option value="31">Weakening</option>
+						</select>
+					</td>
+					<td>
+						<select name="trait2value" ,="" id="trait2value" onchange='validate("2")'>
+							<option value="-1" selected="selected">--</option>
+							<option value="4">+1</option>
+							<option value="5">+2</option>
+							<option value="6">+3</option>
+							<option value="7">+4</option>
+							<option value="8">+5</option>
+							<option value="9">+6</option>
+							<option value="10">+7</option>
+							<option value="11">+8</option>
+							<option value="3">-1</option>
+							<option value="2">-2</option>
+							<option value="1">-3</option>
+							<option value="0">-4</option>
+						</select>
+					</td>
+					<td><span id="trait2err" style="color:red"></span></td>
+				</tr>
+				
+				<tr>
+					<td align="center" width="150px"><b>Modifier 3</b></td>
+					<td>
+						<select name="trait3" id="trait3" onchange='validate("3")'>
+							<option value="0" selected="selected">None</option>
+							<option value="5">Bkwd-Dash Ch. Shot</option>
+							<option value="10">Bkwd-Dash Cont. Fire</option>
+							<option value="35">Burning</option>
+							<option value="34">Confusion</option>
+							<option value="2">Dash Ch. Shot</option>
+							<option value="7">Dash Cont. Fire</option>
+							<option value="28">Effect Duration</option>
+							<option value="26">Evasion</option>
+							<option value="36">Freezing</option>
+							<option value="41">Full Health Boost</option>
+							<option value="3">Fwd-Dash Ch. Shot</option>
+							<option value="8">Fwd-Dash Cont. Fire</option>
+							<option value="15">Health</option>
+							<option value="44">Heart Bonus</option>
+							<option value="43">In-peril Attack Boost</option>
+							<option value="42">In-peril Auto-dodge</option>
+							<option value="13">Item Attack</option>
+							<option value="18">Knockback Defense</option>
+							<option value="19">Knockback Recovery</option>
+							<option value="11">Melee Combo</option>
+							<option value="12">Melee Dash Attack</option>
+							<option value="17">Melee Defense</option>
+							<option value="21">Overall Defense</option>
+							<option value="30">Paralysis</option>
+							<option value="32">Petrification</option>
+							<option value="29">Poison</option>
+							<option value="14">Power Attack</option>
+							<option value="27">Recovery Effect</option>
+							<option value="24">Running Speed</option>	
+							<option value="40">Self Injury</option>
+							<option value="33">Shaking</option>
+							<option value="39">Shot Cancellation</option>
+							<option value="16">Shot Defense</option>
+							<option value="38">Shot Homing</option>
+							<option value="37">Shot Range</option>
+							<option value="4">Side-Dash Ch. Shot</option>
+							<option value="9">Side-Dash Cont. Fire</option>
+							<option value="23">Speed</option>
+							<option value="22">Stamina</option>
+							<option value="6">Standing Cont. Fire</option>
+							<option value="1">Standing Ch. Shot</option>
+							<option value="20">Status Resistance</option>						
+							<option value="25">Walking Speed</option>
+							<option value="31">Weakening</option>						
+						</select>
+					</td>
+					<td>
+						<select name="trait3value" ,="" id="trait3value" onchange='validate("3")'>
+							<option value="-1" selected="selected">--</option>
+							<option value="4">+1</option>
+							<option value="5">+2</option>
+							<option value="6">+3</option>
+							<option value="7">+4</option>
+							<option value="8">+5</option>
+							<option value="9">+6</option>
+							<option value="10">+7</option>
+							<option value="11">+8</option>
+							<option value="3">-1</option>
+							<option value="2">-2</option>
+							<option value="1">-3</option>
+							<option value="0">-4</option>
+						</select>
+					</td>
+					<td><span id="trait3err" style="color:red"></span></td>
+				</tr>
+				
+				<tr>
+					<td align="center" width="150px"><b>Modifier 4</b></td>
+					<td>
+						<select name="trait4" id="trait4" onchange='validate("4")'>
+							<option value="0" selected="selected">None</option>
+							<option value="5">Bkwd-Dash Ch. Shot</option>
+							<option value="10">Bkwd-Dash Cont. Fire</option>
+							<option value="35">Burning</option>
+							<option value="34">Confusion</option>
+							<option value="2">Dash Ch. Shot</option>
+							<option value="7">Dash Cont. Fire</option>
+							<option value="28">Effect Duration</option>
+							<option value="26">Evasion</option>
+							<option value="36">Freezing</option>
+							<option value="41">Full Health Boost</option>
+							<option value="3">Fwd-Dash Ch. Shot</option>
+							<option value="8">Fwd-Dash Cont. Fire</option>
+							<option value="15">Health</option>
+							<option value="44">Heart Bonus</option>
+							<option value="43">In-peril Attack Boost</option>
+							<option value="42">In-peril Auto-dodge</option>
+							<option value="13">Item Attack</option>
+							<option value="18">Knockback Defense</option>
+							<option value="19">Knockback Recovery</option>
+							<option value="11">Melee Combo</option>
+							<option value="12">Melee Dash Attack</option>
+							<option value="17">Melee Defense</option>
+							<option value="21">Overall Defense</option>
+							<option value="30">Paralysis</option>
+							<option value="32">Petrification</option>
+							<option value="29">Poison</option>
+							<option value="14">Power Attack</option>
+							<option value="27">Recovery Effect</option>
+							<option value="24">Running Speed</option>	
+							<option value="40">Self Injury</option>
+							<option value="33">Shaking</option>
+							<option value="39">Shot Cancellation</option>
+							<option value="16">Shot Defense</option>
+							<option value="38">Shot Homing</option>
+							<option value="37">Shot Range</option>
+							<option value="4">Side-Dash Ch. Shot</option>
+							<option value="9">Side-Dash Cont. Fire</option>
+							<option value="23">Speed</option>
+							<option value="22">Stamina</option>
+							<option value="6">Standing Cont. Fire</option>
+							<option value="1">Standing Ch. Shot</option>
+							<option value="20">Status Resistance</option>						
+							<option value="25">Walking Speed</option>
+							<option value="31">Weakening</option>
+						</select>
+					</td>
+					<td>
+						<select name="trait4value" ,="" id="trait4value" onchange='validate("4")'>
+							<option value="-1" selected="selected">--</option>
+							<option value="4">+1</option>
+							<option value="5">+2</option>
+							<option value="6">+3</option>
+							<option value="7">+4</option>
+							<option value="8">+5</option>
+							<option value="9">+6</option>
+							<option value="10">+7</option>
+							<option value="11">+8</option>
+							<option value="3">-1</option>
+							<option value="2">-2</option>
+							<option value="1">-3</option>
+							<option value="0">-4</option>
+						</select>
+					</td>
+					<td><span id="trait4err" style="color:red"></span></td>
+				</tr>
+				
+				<tr>
+					<td align="center" width="150px"><b>Modifier 5</b></td>
+					<td>
+						<select name="trait5" id="trait5" onchange='validate("5")'>
+							<option value="0" selected="selected">None</option>
+							<option value="5">Bkwd-Dash Ch. Shot</option>
+							<option value="10">Bkwd-Dash Cont. Fire</option>
+							<option value="35">Burning</option>
+							<option value="34">Confusion</option>
+							<option value="2">Dash Ch. Shot</option>
+							<option value="7">Dash Cont. Fire</option>
+							<option value="28">Effect Duration</option>
+							<option value="26">Evasion</option>
+							<option value="36">Freezing</option>
+							<option value="41">Full Health Boost</option>
+							<option value="3">Fwd-Dash Ch. Shot</option>
+							<option value="8">Fwd-Dash Cont. Fire</option>
+							<option value="15">Health</option>
+							<option value="44">Heart Bonus</option>
+							<option value="43">In-peril Attack Boost</option>
+							<option value="42">In-peril Auto-dodge</option>
+							<option value="13">Item Attack</option>
+							<option value="18">Knockback Defense</option>
+							<option value="19">Knockback Recovery</option>
+							<option value="11">Melee Combo</option>
+							<option value="12">Melee Dash Attack</option>
+							<option value="17">Melee Defense</option>
+							<option value="21">Overall Defense</option>
+							<option value="30">Paralysis</option>
+							<option value="32">Petrification</option>
+							<option value="29">Poison</option>
+							<option value="14">Power Attack</option>
+							<option value="27">Recovery Effect</option>
+							<option value="24">Running Speed</option>	
+							<option value="40">Self Injury</option>
+							<option value="33">Shaking</option>
+							<option value="39">Shot Cancellation</option>
+							<option value="16">Shot Defense</option>
+							<option value="38">Shot Homing</option>
+							<option value="37">Shot Range</option>
+							<option value="4">Side-Dash Ch. Shot</option>
+							<option value="9">Side-Dash Cont. Fire</option>
+							<option value="23">Speed</option>
+							<option value="22">Stamina</option>
+							<option value="6">Standing Cont. Fire</option>
+							<option value="1">Standing Ch. Shot</option>
+							<option value="20">Status Resistance</option>						
+							<option value="25">Walking Speed</option>
+							<option value="31">Weakening</option>
+						</select>
+					</td>
+					<td>
+						<select name="trait5value" ,="" id="trait5value" onchange='validate("5")'>
+							<option value="-1" selected="selected">--</option>
+							<option value="4">+1</option>
+							<option value="5">+2</option>
+							<option value="6">+3</option>
+							<option value="7">+4</option>
+							<option value="8">+5</option>
+							<option value="9">+6</option>
+							<option value="10">+7</option>
+							<option value="11">+8</option>
+							<option value="3">-1</option>
+							<option value="2">-2</option>
+							<option value="1">-3</option>
+							<option value="0">-4</option>
+						</select>
+					</td>
+					<td><span id="trait5err" style="color:red"></span></td>
+				</tr>
+				
+				<tr>
+					<td align="center" width="150px"><b>Modifier 6</b></td>
+					<td>
+						<select name="trait6" id="trait6" onchange='validate("6")'>
+							<option value="0" selected="selected">None</option>
+							<option value="5">Bkwd-Dash Ch. Shot</option>
+							<option value="10">Bkwd-Dash Cont. Fire</option>
+							<option value="35">Burning</option>
+							<option value="34">Confusion</option>
+							<option value="2">Dash Ch. Shot</option>
+							<option value="7">Dash Cont. Fire</option>
+							<option value="28">Effect Duration</option>
+							<option value="26">Evasion</option>
+							<option value="36">Freezing</option>
+							<option value="41">Full Health Boost</option>
+							<option value="3">Fwd-Dash Ch. Shot</option>
+							<option value="8">Fwd-Dash Cont. Fire</option>
+							<option value="15">Health</option>
+							<option value="44">Heart Bonus</option>
+							<option value="43">In-peril Attack Boost</option>
+							<option value="42">In-peril Auto-dodge</option>
+							<option value="13">Item Attack</option>
+							<option value="18">Knockback Defense</option>
+							<option value="19">Knockback Recovery</option>
+							<option value="11">Melee Combo</option>
+							<option value="12">Melee Dash Attack</option>
+							<option value="17">Melee Defense</option>
+							<option value="21">Overall Defense</option>
+							<option value="30">Paralysis</option>
+							<option value="32">Petrification</option>
+							<option value="29">Poison</option>
+							<option value="14">Power Attack</option>
+							<option value="27">Recovery Effect</option>
+							<option value="24">Running Speed</option>	
+							<option value="40">Self Injury</option>
+							<option value="33">Shaking</option>
+							<option value="39">Shot Cancellation</option>
+							<option value="16">Shot Defense</option>
+							<option value="38">Shot Homing</option>
+							<option value="37">Shot Range</option>
+							<option value="4">Side-Dash Ch. Shot</option>
+							<option value="9">Side-Dash Cont. Fire</option>
+							<option value="23">Speed</option>
+							<option value="22">Stamina</option>
+							<option value="6">Standing Cont. Fire</option>
+							<option value="1">Standing Ch. Shot</option>
+							<option value="20">Status Resistance</option>						
+							<option value="25">Walking Speed</option>
+							<option value="31">Weakening</option>
+						</select>
+					</td>
+					<td>
+						<select name="trait6value" ,="" id="trait6value" onchange='validate("6")'>
+							<option value="-1" selected="selected">--</option>
+							<option value="4">+1</option>
+							<option value="5">+2</option>
+							<option value="6">+3</option>
+							<option value="7">+4</option>
+							<option value="8">+5</option>
+							<option value="9">+6</option>
+							<option value="10">+7</option>
+							<option value="11">+8</option>
+							<option value="3">-1</option>
+							<option value="2">-2</option>
+							<option value="1">-3</option>
+							<option value="0">-4</option>
+						</select>
+					</td>
+					<td><span id="trait6err" style="color:red"></span></td>
+				</tr>
+			</tbody></table>
+			
+			<br>
+			
+			<table width="300px">
+				<tbody><tr align="center">
+					<td> 
+						<input value="Calculate" name="calcButton" onclick="calculate()" type="button">
+					</td>
+					<td>
+						<input value="Reset" name="resetButton" onclick="reset_form()" type="button">
+					</td>
+				</tr>
+			</tbody></table>
+		</form></center>
+		
+		<br>
+		<center>
+		<div style="font-size: 24"><b>Final estimated value:</b> <br><span id="result" style="font-size: 50; color: blue">100<span></span></span></div>
+		</center>
+		<br>
+		<br>
+		<p>Notes: A weapons max value allowable is 351. (when going online, anything higher than 351 is devalued to 100, as tested by SWD) This would make 351 the absolute highest allowed, but must be so rare to the point of not even finding such a weapon. The highest KNOWN value is 342. A weapon can only have one negative mod. Using a "powerful" negative mod allows you to throw in extra mods and stars while keeping the value low. 
+		<p>
+		This product originally brought by pika7. Now reuploaded by riskit4biskit. (DCandDzwc) Extra credits to gamefaqs for any help with the project. Please send feedback <a href="http://www.gamefaqs.com/boards/997768-kid-icarus-uprising/68550902">here.</a><br>If you would like to save this for offline use, right click on the page and select "Save as..." or "Save Page" save it to wherever you want.</p>
+		<br>
+		<hr>
+		<center><font size="30">Weapon Fusion Calculator</font></center>
+		<hr>
+		<br>
+		
+		<script type="text/javascript">
+			
+			//create object for array
+			function Trait(value, valid, known) {
+				this.value = value;
+				this.valid = valid;
+				this.known = known;
+			}
+			
+			//45 different traits total including none
+			//order: +1, +2, +3, +4, +5, +6, +7, +8, -1, -2, -3, -4	
+			//array to hold display values
+			
+			//array to check if weapon trait value is known and most common validity, initialise to 0, invalid, known.
+			var valueArray = new Array();
+			for(var i = 0; i < 45; i++) {
+				valueArray[i] = new Array();
+				for(var j = 0; j < 14; j++) {
+					valueArray[i][j] = new Trait(0, false, true);
+				}
+			}
+			
+			// ----- array for attack values -----
+			var rangedArray = new Array();
+			rangedArray[0] = 0;
+			rangedArray[1] = 14.9;
+			rangedArray[2] = 23.2;
+			rangedArray[3] = 31.5;
+			rangedArray[4] = 39.8;
+			rangedArray[5] = 48.1;
+			rangedArray[6] = 56.4;
+			rangedArray[7] = 64.7;
+			rangedArray[8] = 73;
+			rangedArray[9] = 81.3;
+			rangedArray[10] = 89.6;
+			rangedArray[11] = 98.2;
+			rangedArray[12] = 106.2;
+			
+			var meleeArray = new Array();
+			meleeArray[0] = 0;
+			meleeArray[1] = 9.4;
+			meleeArray[2] = 15.2;
+			meleeArray[3] = 21;
+			meleeArray[4] = 26.8;
+			meleeArray[5] = 32.6;
+			meleeArray[6] = 38.4;
+			meleeArray[7] = 44.2;
+			meleeArray[8] = 50;
+			meleeArray[9] = 55.8;
+			meleeArray[10] = 61.6;
+			meleeArray[11] = 67.4;
+			meleeArray[12] = 73.2;
+			
+			// ----- setting array values -----
+			
+			//0. None
+			
+			//1. Standing Ch. Shot
+			set_all_values(1, "-2", "+4", new Array(-12.8, -6.4, 9.2, 15.8, 22.4, 29));
+
+			//2. Dash Ch. Shot
+			set_all_values(2, "-2", "+4", new Array(-22.1, -11.1, 13.2, 23.3, 33.4, 43.6));
+			
+			//3. Fwd-Dash Ch. Shot
+			set_all_values(3, "+1", "+4", new Array(11.2, 19.1, 26.9, 34.8));
+
+			//4. Side-Dash Ch. Shot
+			set_all_values(4, "+1", "+4", new Array(9.9, 16.7, 23.5, 30.4));
+			
+			//5. Bkwd-Dash Ch. Shot
+			set_all_values(5, "+1", "+4", new Array(10.6, 17.9, 25.2, 32.6));
+			
+			//6. Standing Cont. Fire
+			set_all_values(6, "-2", "+4", new Array(-10.1, -5.1, 7.9, 13.0, 18.0, 23.1));
+			
+			//7. Dash-Cont Fire
+			set_all_values(7, "-2", "+4", new Array(-18.5, -9.2, 10.6, 17.2, 23.8, 30.4));
+			
+			//8. Fwd-Dash Cont. Fire
+			set_all_values(8, "+1", "+4", new Array(8.6, 14.2, 19.7, 25.3));
+
+			//9. Side-Dash Cont. Fire
+			set_all_values(9, "+1", "+4", new Array(8.6, 14.2, 19.7, 25.3));
+
+			//10. Bkwd-Dash Cont. Fire
+			set_all_values(10, "+1", "+4", new Array(8.6, 14.2, 19.7, 25.3));
+
+			//11. Melee Combo
+			set_all_values(11, "-2", "+4", new Array(-12.8, -6.4, 9.2, 15.3, 21.4, 27.5));
+			
+			//12. Melee Dash Attack
+			set_all_values(12, "-2", "+4", new Array(-11.0, -5.5, 7.9, 12.6, 17.3, 22.0));
+			
+			//13. Item Attack
+			set_all_values(13, "+1", "+4", new Array(14.5, 27.7, 40.9, 54.1));
+			
+			//14. Power Attack
+			set_all_values(14, "+1", "+4", new Array(23.8, 40.3, 56.8, 73.3));
+			
+			//15. Health
+			set_all_values(15, "-4", "+6", new Array(-31.1, -23.5, -15.8, -8.1, 9.0, 18.4, 27.9, 37.3, 46.7, 56.1));
+			
+			//16. Shot Defense
+			set_all_values(16, "-2", "+4", new Array(-31.2, -14.9, 15.0, 29.8, 44.7, 59.6));
+			
+			//17. Melee Defense
+			set_all_values(17, "-2", "+4", new Array(-20.8, -8.9, 9.9, 18.5, 27.1, 35.6));
+			
+			//18. Knockback Defense
+			set_all_values(18, "+1", "+4", new Array(6.6, 13.2, 19.8, 26.4));
+			
+			//19. Knockback Recovery 
+			set_value(19, "+1", 10.6);
+			
+			//20. Status Resistance
+			set_all_values(20, "-4", "+4", new Array(-16.6, -13.6, -10.7, -7.7, 12.8, 21.3, 29.8, 38.3));
+			
+			//21. Overall Defense
+			set_all_values(21, "-4", "+8", new Array(-44.0, -34.8, -25.7, -16.5, 15.0, 25.8, 36.6, 47.5, 58.3, 69.2, 80.0, 90.9));
+			
+			//22. Stamina
+			set_all_values(22, "+1", "+4", new Array(11.9, 17.9, 23.9, 29.9));
+			
+			//23. Speed
+			set_all_values(23, "-4", "+4", new Array(-30.8, -24.2, -17.6, -11.0, 9.2, 17.2, 25.1, 33.0));
+			
+			//24. Running Speed
+			set_all_values(24, "+1", "+4", new Array(7.9, 13.4, 18.9, 24.4));
+			
+			//25. Walking Speed
+			set_all_values(25, "+1", "+4", new Array(6.6, 9.9, 13.2, 16.5));
+			
+			//26. Evasion
+			set_all_values(26, "+1", "+4", new Array(10.8, 17.2, 23.5, 29.9));
+			
+			//27. Recovery Effect
+			set_all_values(27, "+1", "+4", new Array(15.8, 21.1, 26.4, 31.7));
+			
+			//28. Effect Duration
+			set_all_values(28, "+1", "+4", new Array(10.6, 20.2, 29.9, 39.6));
+			
+			//29. Poison
+			set_all_values(29, "+1", "+4", new Array(6.2, 10.0, 13.9, 17.8));
+			
+			//30. Paralysis
+			set_all_values(30, "+1", "+4", new Array(7.9, 14.5, 21.1, 27.7));
+			
+			//31. Weakness
+			set_all_values(31, "+1", "+4", new Array(9.2, 16.4, 23.5, 30.6));
+			
+			//32. Petrification
+			set_all_values(32, "+1", "+4", new Array(16.9, 20.9, 24.9, 28.8));
+			
+			//33. Shaking
+			set_all_values(33, "+1", "+4", new Array(7.3, 14.1, 20.9, 27.7));
+			
+			//34. Confusion
+			set_all_values(34, "+1", "+4", new Array(7.3, 14.1, 20.9, 27.7));		
+			
+			//35. Burning
+			set_all_values(35, "+1", "+4", new Array(7.9, 13.9, 19.8, 25.7));
+			
+			//36. Freezing
+			set_all_values(36, "+1", "+4", new Array(20.2, 25.5, 30.8, 36.1));
+			
+			//37. Shot Range
+			set_all_values(37, "-3", "+3", new Array(-12.5, -9.2, -5.9, 13.9, 24.3, 34.8));
+			
+			//38. Shot Homing
+			set_all_values(38, "-3", "+3", new Array(-11.7, -8.1, -4.6, 11.9, 18.7, 25.5));
+			
+			//39. Shot Cancellation
+			set_value(39, "+1", 42.5);
+			
+			//40. Self-injury
+			set_all_values(40, "-3", "-1", new Array(-17.6, -13.2, -8.8));
+			
+			//41. Full-Health Boost
+			set_all_values(41, "+1", "+6", new Array(8.6, 12.3, 16.1, 19.8, 23.5, 27.3));
+			
+			//42. In-peril Auto-dodge
+			set_all_values(42, "+1", "+3", new Array(7.7, 11.6, 15.4));
+			
+			//43. In-peril Attack Boost
+			set_all_values(43, "-4", "+6", new Array(-21.3, -17.8, -14.2, -10.7, 9.9, 16.0, 22.0, 28.1, 34.2, 40.3));
+			
+			//44. Heart Boost
+			set_all_values(44, "-3", "+3", new Array(-6.6, -5.0, -3.3, 8.8, 17.6, 26.4));
+
+			
+			// ----- validation -----
+			function validate(n) {
+				//create id names
+				var traitName = "trait" + n;
+				var traitddlName = "trait" + n + "value";
+				var traitErr = "trait" + n + "err";
+			
+				var trait_ddl = document.getElementById(traitName);
+				var traitValue_ddl = document.getElementById(traitddlName);
+				
+				var trait = trait_ddl.options[trait_ddl.selectedIndex].value;
+				var traitValue = traitValue_ddl.options[traitValue_ddl.selectedIndex].value;
+				var errorText = document.getElementById(traitErr);
+				var rangedText = document.getElementById("rangedValue");
+				var meleeText = document.getElementById("meleeValue");
+				
+				//make sure star values displayed
+				rangedText.innerHTML = rangedArray[get_ranged_item()];
+				meleeText.innerHTML = meleeArray[get_melee_item()];
+				
+				//check for validity and known values
+				if(traitValue == -1) {
+					document.getElementById(traitErr).innerHTML = "";
+					return true;
+				}
+				else if (trait == 0) {
+					errorText.innerHTML = "";
+					return true;
+				}
+				else if (valueArray[trait][traitValue].valid == false) {
+					errorText.style.color = "red";
+					errorText.innerHTML = "Invalid attribute";
+					return false;
+				}
+				else if (valueArray[trait][traitValue].known == false) {
+					errorText.style.color = "red";
+					errorText.innerHTML = "Unknown value, will not include in calculation.";
+					return true;
+				}
+				else {
+					errorText.style.color = "black";
+					errorText.innerHTML = valueArray[trait][traitValue].value;
+					return true;
+				}
+				
+			}
+			
+			// ----- calculation -----
+			function calculate() {
+				var value = 100;
+				var result = document.getElementById("result");
+			
+				//make sure everything is valid
+				
+				if(validate_all() == false) {
+					result.innerHTML = "err";
+				}
+				else {
+					//figure out attack values
+					for (var i=0; i < document.form.ranged.length; i++) {
+						if (document.form.ranged[i].checked) {
+							value += rangedArray[document.form.ranged[i].value];
+						}
+					}
+					
+					for (var i=0; i < document.form.melee.length; i++) {
+						if (document.form.melee[i].checked) {
+							value += meleeArray[document.form.melee[i].value];
+						}
+					}
+					
+					for(var i = 1; i <= 6; i++) {
+						//figure out attribute values for all
+						var traitName = "trait" + i;
+						var traitddlName = "trait" + i + "value";
+						var traitErr = "trait" + i + "err";
+						
+						var trait_ddl = document.getElementById(traitName);
+						var traitValue_ddl = document.getElementById(traitddlName);
+						
+						var trait = trait_ddl.options[trait_ddl.selectedIndex].value;
+						var traitValue = traitValue_ddl.options[traitValue_ddl.selectedIndex].value;
+						
+						if(traitValue != -1) {
+							value += valueArray[trait][traitValue].value;
+						}
+					}
+					
+					if(value >= 100) {
+						result.innerHTML = Math.floor(value);
+					}
+					else {
+						result.innerHTML = Math.ceil(value);
+					}
+					
+				}
+				
+			}
+			
+			// -----reset-----
+			function reset_form() {
+				//revert all labels
+				document.getElementById("rangedValue").innerHTML = 0;
+				document.getElementById("meleeValue").innerHTML = 0;
+				document.getElementById("trait1err").innerHTML = "";
+				document.getElementById("trait2err").innerHTML = "";
+				document.getElementById("trait3err").innerHTML = "";
+				document.getElementById("trait4err").innerHTML = "";
+				document.getElementById("trait5err").innerHTML = "";
+				document.getElementById("trait6err").innerHTML = "";
+				document.getElementById("result").innerHTML = 100;
+
+				
+				//reset radio button
+				document.form.ranged[0].checked = true;
+				document.form.melee[0].checked = true;
+				
+				//reset all drop down lists
+				document.form.trait1.selectedIndex = 0;
+				document.form.trait1.options[0].selected = true;
+				document.form.trait1value.selectedIndex = 0;
+				document.form.trait1value.options[0].selected = true;
+				
+				document.form.trait2.selectedIndex = 0;
+				document.form.trait2.options[0].selected = true;
+				document.form.trait2value.selectedIndex = 0;
+				document.form.trait2value.options[0].selected = true;
+				
+				document.form.trait3.selectedIndex = 0;
+				document.form.trait3.options[0].selected = true;
+				document.form.trait3value.selectedIndex = 0;
+				document.form.trait3value.options[0].selected = true;
+				
+				document.form.trait4.selectedIndex = 0;
+				document.form.trait4.options[0].selected = true;
+				document.form.trait4value.selectedIndex = 0;
+				document.form.trait4value.options[0].selected = true;
+				
+				document.form.trait5.selectedIndex = 0;
+				document.form.trait5.options[0].selected = true;
+				document.form.trait5value.selectedIndex = 0;
+				document.form.trait5value.options[0].selected = true;
+				
+				document.form.trait6.selectedIndex = 0;
+				document.form.trait6.options[0].selected = true;
+				document.form.trait6value.selectedIndex = 0;
+				document.form.trait6value.options[0].selected = true;
+
+			}
+			
+			function validate_all() {
+				for(var i = 1; i <= 6; i++) {
+					if(validate(i) == false) {
+						return false;
+					}
+				}
+			}
+			
+			//set all the values from lowest to highest
+			function set_all_values(trait, startMod, endMod, arr) {
+				var startIndex = toIndex(startMod);
+				var endIndex = toIndex(endMod);
+				var j = 0;
+				
+				for(var i = startIndex; i <= endIndex; i++) {
+					valueArray[trait][i].value = arr[j];
+					valueArray[trait][i].valid = true;
+					j++;
+				}
+				
+			}
+			
+			function toIndex(modifier) {
+				var traitValue;
+				
+				switch(modifier) {
+				case "+1":
+					traitValue = 4;
+					break;
+				case "+2":
+					traitValue = 5;
+					break;
+				case "+3":
+					traitValue = 6;
+					break;
+				case "+4":
+					traitValue = 7;
+					break;
+				case "+5":
+					traitValue = 8;
+					break;
+				case "+6":
+					traitValue = 9;
+					break;
+				case "+7":
+					traitValue = 10;
+					break;
+				case "+8":
+					traitValue = 11;
+					break;
+				case "-1":
+					traitValue = 3;
+					break;
+				case "-2":
+					traitValue = 2;
+					break;
+				case "-3":
+					traitValue = 1;
+					break;
+				case "-4":
+					traitValue = 0;
+					break;
+				default:
+					alert("Mysterious error!");
+				}
+				
+				return traitValue;
+			}
+			
+			function set_value(trait, modifier, value) {
+				traitValue = toIndex(modifier);
+				
+				valueArray[trait][traitValue].value = value;
+				valueArray[trait][traitValue].valid = true;
+			}
+			
+			function show_ranged_value(n) {
+				document.getElementById("rangedValue").innerHTML = rangedArray[n];
+			}
+			
+			function show_melee_value(n) {
+				document.getElementById("meleeValue").innerHTML = meleeArray[n];
+			}
+			
+			function get_ranged_item() {
+				for(var i = 0; i <= 12; i++) {
+					if(document.form.ranged[i].checked) {
+						return i;
+					}
+				}
+			}
+			
+			function get_melee_item() {
+				for(var i = 0; i <= 12; i++) {
+					if(document.form.melee[i].checked) {
+						return i;
+					}
+				}
+			}
+		</script>
+		
+		<!-- storage value calculator
+		
+		<option value=0 selected="selected">None</option>
+							<option value=1>Standing Ch. Shot</option>
+							<option value=2>Dash Ch. Shot</option>
+							<option value=3>Fwd-Dash Ch. Shot</option>
+							<option value=4>Side-Dash Ch. Shot</option>
+							<option value=5>Bkwd-Dash Ch. Shot</option>
+							<option value=6>Standing Cont. Fire</option>
+							<option value=7>Dash-Cont. Fire</option>
+							<option value=8>Fwd-Dash Cont. Fire</option>
+							<option value=9>Side-Dash Cont. Fire</option>
+							<option value=10>Bkwd-Dash Cont. Fire</option>
+							<option value=11>Melee Combo</option>
+							<option value=12>Melee Dash Attack</option>
+							<option value=13>Item Attack</option>
+							<option value=14>Power Attack</option>
+							<option value=15>Health</option>
+							<option value=16>Shot Defense</option>
+							<option value=17>Melee Defense</option>
+							<option value=18>Knockback Defense</option>
+							<option value=19>Knockback Recovery</option>
+							<option value=20>Status Resistance</option>
+							<option value=21>Overall Defense</option>
+							<option value=22>Stamina</option>
+							<option value=23>Speed</option>
+							<option value=24>Running Speed</option>
+							<option value=25>Walking Speed</option>
+							<option value=26>Evasion</option>
+							<option value=27>Recovery Effect</option>
+							<option value=28>Effect Duration</option>
+							<option value=29>Poison</option>
+							<option value=30>Paralysis</option>
+							<option value=31>Weakness</option>
+							<option value=32>Petrification</option>
+							<option value=33>Shaking</option>
+							<option value=34>Confusion</option>
+							<option value=35>Burning</option>
+							<option value=36>Freezing</option>
+							<option value=37>Shot Range</option>
+							<option value=38>Shot Homing</option>
+							<option value=39>Shot Cancellation</option>
+							<option value=40>Self Injury</option>
+							<option value=41>Full Health Boost</option>
+							<option value=42>In-peril Auto-dodge</option>
+							<option value=43>In-peril Attack Boost</option>
+							<option value=44>Heart Bonus</option>
+							
+							-->
+<!-- start of Dyntos' Eye -->
+	<center>
+	<meta http-equiv="Content-type" content="text/html; charset=Shift_JIS">
+<script type="text/javascript"> 
+<!--
+//神器融合計算機　ディントスアイ created by KZ
+//Weapon Fusion Calculator: Dyntos Eye created by KZ
+//Dirty english translation by some dog
+//Credits to DCandDzwc for reuploading to http://drinal.github.io
+ 
+//定数類
+var TYPE_MAX = 9;//神器種の最大数
+var ID_MAX = 12;//神器IDの最大数
+ 
+//グループ
+var group_table = [2,4,3,1,5];
+ 
+//合成結果種別
+var mix_type = [
+	[2,2,5,4,8,1,1,4,3],
+	[2,6,8,8,6,2,0,5,7],
+	[5,8,5,5,8,3,3,1,1],
+	[4,8,5,6,5,4,7,6,0],
+	[8,6,8,5,8,0,0,3,7],
+	[1,2,3,4,0,7,7,2,0],
+	[1,0,3,7,0,7,4,2,1],
+	[4,5,1,6,3,2,2,6,4],
+	[3,7,1,0,7,0,1,4,3]
+];
+ 
+//例外テーブル
+var ex_table = [
+	[0*ID_MAX+ 0,7*ID_MAX+10,3,11],
+	[0*ID_MAX+ 6,5*ID_MAX+ 4,7,12],
+	[1*ID_MAX+ 2,7*ID_MAX+ 3,0, 7],
+	[1*ID_MAX+ 3,8*ID_MAX+ 7,0,12],
+	[1*ID_MAX+ 7,4*ID_MAX+ 8,8,10],
+	[1*ID_MAX+10,3*ID_MAX+ 0,0,11],
+	[2*ID_MAX+ 4,4*ID_MAX+ 0,6, 6],
+	[2*ID_MAX+ 5,5*ID_MAX+ 5,4,12],
+	[3*ID_MAX+ 6,3*ID_MAX+11,4,11],
+	[3*ID_MAX+ 6,8*ID_MAX+ 4,7,11],
+	[4*ID_MAX+ 4,6*ID_MAX+ 1,5, 8],
+	[4*ID_MAX+ 6,6*ID_MAX+ 4,8,12],
+	[5*ID_MAX+ 5,6*ID_MAX+ 5,1,11],
+	[6*ID_MAX+11,7*ID_MAX+11,2,11],
+	[7*ID_MAX+ 2,8*ID_MAX+ 3,6, 7]
+];
+var EX_NUM = 15;//例外数
+ 
+//神器名
+var name_table = [
+	"First Blade ",
+	"Burst Blade ",
+	"Viper Blade ",
+	"Crusader Blade ",
+	"Royal Blade ",
+	"Optical Blade ",
+	"Samurai Blade ",
+	"Bullet Blade ",
+	"Aquarius Blade ",
+	"Aurum Blade ",
+	"Palutena Blade ",
+	"Gaol Blade ",
+ 
+	"Insight Staff ",
+	"Orb Staff ",
+	"Rose Staff ",
+	"Knuckle Staff ",
+	"Ancient Staff ",
+	"Lancer Staff ",
+	"Flintlock Staff ",
+	"Somewhat Staff ",
+	"Scorpio Staff ",
+	"Laser Staff ",
+	"Dark Pit Staff ",
+	"Thanatos Staff ",
+ 
+	"Tiger Claws ",
+	"Wolf Claws ",
+	"Bear Claws ",
+	"Brawler Claws ",
+	"Stealth Claws ",
+	"Hedgehog Claws ",
+	"Raptor Claws ",
+	"Artillery Claws ",
+	"Cancer Claws ",
+	"Beam Claws ",
+	"Viridi Claws ",
+	"Pandora Claws ",
+ 
+	"Fortune Bow ",
+	"Silver Bow ",
+	"Meteor Bow ",
+	"Divine Bow ",
+	"Darkness Bow ",
+	"Crystal Bow ",
+	"Angel Bow ",
+	"Hawkeye Bow ",
+	"Sagitaurus Bow ",
+	"Aurum Bow ",
+	"Palutena Bow ",
+	"Phosphora Bow ",
+ 
+	"Violet Palm ",
+	"Burning Palm ",
+	"Needle Palm ",
+	"Midnight Palm ",
+	"Cursed Palm ",
+	"Cutter Palm ",
+	"Pudgy Palm ",
+	"Ninja Palm ",
+	"Virgo Palm ",
+	"Aurum Palm ",
+	"Viridi Palm ",
+	"Great Reaper Palm ",
+ 
+	"Ore Club ",
+	"Babel Club ",
+	"Skyscraper Club ",
+	"Atlas Club ",
+	"Earthmaul Club ",
+	"Ogre Club ",
+	"Halo Club ",
+	"Black Club ",
+	"Capricorn Club ",
+	"Aurum Club ",
+	"Hewdraw Club ",
+	"Magnus Club ",
+ 
+	"EZ Cannon ",
+	"Ball Cannon ",
+	"Predator Cannon ",
+	"Poseidon Cannon ",
+	"Fireworks Cannon ",
+	"Rail Cannon ",
+	"Dynamo Cannon ",
+	"Doom Cannon ",
+	"Leo Cannon ",
+	"Sonic Cannon",
+	"Twinbellows Cannon ",
+	"Cragalanche Cannon ",
+ 
+	"Standard Orbitars ",
+	"Guardian Orbitars ",
+	"Shock Orbitars ",
+	"Eyetrack Orbitars ",
+	"Fairy Orbitars ",
+	"Paw Pad Orbitars ",
+	"Jetstream Orbitars ",
+	"Boom Orbitars ",
+	"Gemini Orbitars ",
+	"Aurum Orbitars ",
+	"Centurion Orbitars ",
+	"Arlon Orbitars ",
+ 
+	"Crusher Arm ",
+	"Compact Arm ",
+	"Electroshock Arm ",
+	"Volcano Arm ",
+	"Drill Arm ",
+	"Bomber Arm ",
+	"Bowl Arm ",
+	"End-All Arm ",
+	"Taurus Arm ",
+	"Upperdash Arm ",
+	"Kraken Arm ",
+	"Phoenix Arm "
+];
+//-->
+</script>
+ 
+<script type="text/javascript"><!--
+ 
+//グループ割り出し
+function cal_group(src0_type,src0_id,src1_type,src1_id){
+	var group = group_table[Math.abs((src0_type - src1_type) * 12 + (src0_id - src1_id)) % 5];
+	return group;
+}
+ 
+//id2つから合成後のIDへ
+function mix_id(id0,id1){
+	var ret = id0 + id1;
+	if(ret > ID_MAX) ret -= ID_MAX;
+	return ret;
+}
+ 
+//タイプとidから名前とidへ
+function type_id_to_name_id(type,id){
+	//return "TEST";
+	var str = "";
+	str += name_table[type *  ID_MAX + (id-1)];
+	str += "(ID" + id + ")";
+	return str;
+}
+ 
+//例外チェック
+function ex_check(num0,num1){
+	var i;
+	for(i=0;i<EX_NUM;i++){
+		if(
+			(num0 == ex_table[i][0] && num1 == ex_table[i][1]) || 
+			(num0 == ex_table[i][1] && num1 == ex_table[i][0])
+		){
+			return i;
+		}
+	}
+	return -1;
+}
+ 
+//表の作成と確認
+function makelist()
+{
+	var str = "";
+ 
+	//材料
+	var type0,type1;
+	var id0,id1;
+	var name0,name1
+	var num0,num1;
+ 
+	//結果
+	var type;	//タイプ
+	var id;		//id
+	var name;	//表示名
+	var group;	//グループ
+	var num;	//全体連番
+ 
+	var index;	//リスト番号
+	var index_num;	//リスト連番
+	var index_num0;	//リスト連番
+	var index_num1;	//リスト連番
+	var ex;//例外
+ 
+	//条件に当てはまるか
+	var flag;
+ 
+	for(type0=0;type0<TYPE_MAX;type0++){
+		for(type1=type0;type1<TYPE_MAX;type1++){
+ 
+	for(id0=1;id0<=ID_MAX;id0++){
+		for (id1=1;id1<=ID_MAX;id1++){
+			flag = true;
+			type = mix_type[type0][type1];
+			id = mix_id(id0,id1);
+			num  = type  * ID_MAX + id  -1;
+			num0 = type0 * ID_MAX + id0 -1;
+			num1 = type1 * ID_MAX + id1 -1;
+			group = cal_group(type0,id0,type1,id1);
+ 
+			name0= type_id_to_name_id(type0,id0);
+			name1= type_id_to_name_id(type1,id1);
+			name = type_id_to_name_id(type,id);
+ 
+			//例外時に結果を入れ替える
+			ex = ex_check(num0,num1);
+			if(ex >= 0){
+				type = ex_table[ex][2];
+				id =  ex_table[ex][3];
+				num  = type  * ID_MAX + id  -1;
+				name = type_id_to_name_id(type,id);
+			}
+ 
+			//タイプが同じ時はidが小さいパターンのみ
+			if(type0 == type1 && id1 < id0){
+				flag = false;
+			}
+ 
+			//材料判定
+			index = Src0.list.selectedIndex;
+			index_num0 = Src0.list.options[index].value;
+			index = Src1.list.selectedIndex;
+			index_num1 = Src1.list.options[index].value;
+ 
+			//片方に寄せる
+			if(index_num0 < 0 && index_num1 >= 0){
+				index_num0 = index_num1;
+				index_num1 = -1;
+			}
+ 
+			//両方指定
+			if(index_num0 >=0 && index_num1 >=0){
+				
+				if(	!(
+					(index_num0 == num0 && index_num1 == num1) ||
+					(index_num0 == num1 && index_num1 == num0) 
+				)){
+					flag = false;
+				}
+			}
+			//片方指定
+			else if(index_num0 >=0){
+				if(!(index_num0 == num0 || index_num0 == num1)){
+					flag = false;
+				}
+			}
+			//指定なしはそのまま
+ 
+			//結果判定
+			index = Dist.list.selectedIndex;
+			index_num = Dist.list.options[index].value;
+			if(index_num >= 0 && index_num != num){
+				flag = false;
+			}
+			//神器ID判定
+			if(!document.Dist.ID[0].checked && !document.Dist.ID[id].checked){
+				flag = false;
+			}
+			//神器種別判定
+			if(!document.Dist.type[0].checked && !document.Dist.type[type+1].checked){
+				flag = false;
+			}
+			//グループ判定
+			if(!document.Dist.group[0].checked && !document.Dist.group[group].checked){
+				flag = false;
+			}
+ 
+			//はじかれなかったら表に追加
+			if(flag){
+				str += "<tr>";
+ 
+				str += "<td>";
+				str += name;	
+				str += "</td>";
+ 
+				str += "<td>";
+				str += name0;	
+				str += "</td>";
+ 
+				str += "<td>";
+				str += name1;	
+				str += "</td>";
+ 
+				str += "<td>";
+				str += group;	
+				str += "</td>";
+ 
+				str += "</tr>";
+			}
+ 
+		}
+	}
+ 
+		}
+	}
+	
+	if(str != ""){
+		var tag = "";
+		tag += "<tr>";
+		tag += "<td>Result</td>";
+		tag += "<td>Weapon A</td>";
+		tag += "<td>Weapon B</td>";
+		tag += "<td>Group</td>";
+		tag += "</tr>";
+		str = "<TABLE border=1 cellpadding=6 cellspacing=0>" + tag + str + "</table>";
+	}
+	else{
+		str = "<TABLE border=1 cellpadding=6 cellspacing=0>";
+		str += "<tr>";
+		str += "<td>Try again NOOB!!</td>";
+		str += "</tr>";
+		str += "</table>";
+	}
+	
+	document.getElementById("res").innerHTML=str;
+ 
+}
+ 
+//チェックボックスの一部排他制御
+function check_ctrl(name,num){
+	var i;
+	var check = document.getElementsByName(name);
+	var n = check.length-1;
+	if(num <= 0){
+		check[0].checked = true;
+		for(i=0;i<n;i++)
+			check[i+1].checked = false;
+	}
+	else{
+		var flag = true;
+		for(i=0;i<n;i++){
+			if(check[i+1].checked){
+				flag = false;
+				break;
+			}
+		}
+ 
+		if(!flag){
+			check[0].checked = false;
+		}
+		else{
+			check[0].checked = true;
+			for(i=0;i<n;i++){
+				check[i+1].checked = false;
+			}
+		}
+	}
+}
+ 
+function init(){
+ 
+	var type,id,n;
+	var name;
+	var op;
+ 
+	Src0.list.options[0] = new Option("Unspecified",-1);
+	Src1.list.options[0] = new Option("Unspecified",-1);
+	Dist.list.options[0] = new Option("Unspecified",-1);
+ 
+	for(type=0;type<TYPE_MAX;type++){
+		for(id=0;id<ID_MAX;id++){
+			n = type * ID_MAX + id;
+			name = type_id_to_name_id(type,id+1);
+ 
+			op = new Option(name,n);
+			if(type%2 == 0){
+				op.style.backgroundColor = "#FFFFFF";
+			}
+			else{
+				op.style.backgroundColor = "#C0C0C0";
+			}
+			Src0.list.options[n+1] = op;
+ 
+			op = new Option(name,n);
+			if(type%2 == 0){
+				op.style.backgroundColor = "#FFFFFF";
+			}
+			else{
+				op.style.backgroundColor = "#C0C0C0";
+			}
+			Src1.list.options[n+1] = op;
+ 
+			op = new Option(name,n);
+			if(type%2 == 0){
+				op.style.backgroundColor = "#FFFFFF";
+			}
+			else{
+				op.style.backgroundColor = "#C0C0C0";
+			}
+			Dist.list.options[n+1] = op;
+		}
+	}
+}
+ 
+// --></SCRIPT>
+</head>
+<body onLoad="init()">
+ 
+<FORM name="Src0">
+	Weapon A
+	<SELECT name="list"></SELECT>
+</FORM>
+<hr noshade="noshade">
+ 
+<FORM name="Src1">
+	Weapon B
+	<SELECT name="list"></SELECT>
+</FORM>
+<hr noshade="noshade">
+ 
+<FORM name="Dist">
+	Result or desired weapon
+	<SELECT name="list"></SELECT><BR>
+	From Weapon ID(s)
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 0)" checked=true>Unspecified
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 1)">1
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 2)">2
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 3)">3
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 4)">4
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 5)">5
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 6)">6
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 7)">7
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 8)">8
+	<input type="checkbox" name="ID" onClick="check_ctrl(name, 9)">9
+	<input type="checkbox" name="ID" onClick="check_ctrl(name,10)">10
+	<input type="checkbox" name="ID" onClick="check_ctrl(name,11)">11
+	<input type="checkbox" name="ID" onClick="check_ctrl(name,10)">12
+	<BR>
+	<hr>
+	From Weapon Class(s)
+	<input type="checkbox" name="type" onClick="check_ctrl(name,0)" checked=true>Unspecified
+	<input type="checkbox" name="type" onClick="check_ctrl(name,1)">Blade
+	<input type="checkbox" name="type" onClick="check_ctrl(name,2)">Staff
+	<input type="checkbox" name="type" onClick="check_ctrl(name,3)">Claw
+	<input type="checkbox" name="type" onClick="check_ctrl(name,4)">Bow
+	<input type="checkbox" name="type" onClick="check_ctrl(name,5)">Palm
+	<input type="checkbox" name="type" onClick="check_ctrl(name,6)">Club
+	<input type="checkbox" name="type" onClick="check_ctrl(name,7)">Cannon
+	<input type="checkbox" name="type" onClick="check_ctrl(name,8)">Orbitar
+	<input type="checkbox" name="type" onClick="check_ctrl(name,9)">Arm
+	<BR>
+	<hr>
+	From Fusion Group(s)
+	<input type="checkbox" name="group" onClick="check_ctrl(name,0)" checked=true>Unspecified
+	<input type="checkbox" name="group" onClick="check_ctrl(name,1)">1
+	<input type="checkbox" name="group" onClick="check_ctrl(name,2)">2
+	<input type="checkbox" name="group" onClick="check_ctrl(name,3)">3
+	<input type="checkbox" name="group" onClick="check_ctrl(name,4)">4
+	<input type="checkbox" name="group" onClick="check_ctrl(name,5)">5
+</FORM>
+<hr noshade="noshade">
+ 
+<input type="button" value="Calculate List" onclick="makelist()"
+>
+<div id="res">Results will be here.</div>
+<Div Align="right"><font size=2 color="#D0D0D0">Reuploaded by riskit4biskit</font></Div>
+<script type="text/javascript"><!--
+var fhp_c_pc = navigator.userAgent.toLowerCase();
+var fhp_ie = ((fhp_c_pc.indexOf("msie") != -1) && (fhp_c_pc.indexOf("opera") == -1));
+var fhp_cs, fhp_wt, fhp_dm;
+ 
+if (fhp_ie) {
+        fhp_cs = document.charset;
+}else{
+        fhp_cs = document.characterSet;
+}
+fhp_dm = document.location;
+ 
+fhp_wt = "";
+fhp_wt = '<' + 'script src="http://web.fc2.com/header.php?cs=' + fhp_cs + '&dm=' + fhp_dm + '" charset="UTF-8"><' + '/script>';
+fhp_wt += '<' + 'script src="http://web.fc2.com/footer/footer.php?cs=' + fhp_cs + '&dm=' + fhp_dm + '"><' + '/script>';
+document.write(fhp_wt);
+//--></script>
+<p>Group 1 favors stars while group 5 favors modifiers. Group 3 is best if you are unsure of what group you want. Group 4 is best for serious fusers.</p></center>
+<br>
+<hr>
+<hr>
+<br>
+<p>The chatbox is for weapon/fusion chat ONLY. Users who spam or go too off topic will be kicked/banned. All conversations are logged. You can view old messages by clicking "View Previous Messages" in the top left corner of the chatbox.</p>
+	<iframe src="http://www.neatchat.com/?id=9d53e6c314b6ce5ea37683540bde58de" width="750" height="600"></iframe>
+	</body>
+</html>
