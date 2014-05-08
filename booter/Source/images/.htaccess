@@ -1,3 +1,0 @@
-RewriteEngine on
-AuthName "images"
-AuthUserFile "/home/jeejeepo/.htpasswds/public_html/images/passwd"
