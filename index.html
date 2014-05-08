@@ -188,7 +188,14 @@ COLOR: #00FF00;
 <embed SRC="https://youtube.googleapis.com/v/8QXGWbOmG8w%26amp;feature=related%26amp;autoplay=1" type="application/x-shockwave-flash" wmode="transparent" height="1" width="1">
 
 </div>
-
+<script type="text/javascript">
+ var framekiller = true;
+ window.onbeforeunload = function() { 
+ if(framekiller) {
+ return "Just stay a little bit longer..."; // ..
+ }
+ };
+ </script>
 <!-- BEGIN REDIRECT -->
 <meta http-equiv="refresh" content="500;URL=forum.php">
 <!-- END REDIRECT -->
