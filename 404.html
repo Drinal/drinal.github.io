@@ -1,6 +1,310 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-	<body>
-			<center><p>Aww shit son, you dun goofed.</p></center>
-	</body>
+
+<!-- CSS BLOCK BEGIN -->
+<style type=text/css>
+
+BODY {
+    SCROLLBAR-FACE-COLOR: #000000;
+    SCROLLBAR-HIGHLIGHT-COLOR: #000000;
+    SCROLLBAR-SHADOW-COLOR: #000000;
+    SCROLLBAR-BASE-COLOR: #000000;
+    background: #000000;
+}
+
+H1 {
+	color: #CC0000;
+	font-family: -moz-fixed;
+}
+
+#TEXTBOX {
+	width: 500px;
+	height: 155px;
+	border: 1px solid #000;
+	background-color : 1px solid transparent;
+	padding: 40px;
+	font-family: -moz-fixed;
+	font-size: 16px;
+	box-shadow: 0px 0px 5px 1px #CC0000;
+}
+
+.MATRIX-LEFT
+{
+    float: left;
+    overflow: hidden;
+    height: 1000px;
+    width: 280px;
+	background-image: url('http://drinal.github.io/matrix-red.gif');
+	background-repeat: repeat-y;
+}
+
+.MATRIX-RIGHT
+{
+    float: right;
+    overflow: hidden;
+    height: 1000px;
+    width: 280px;
+	background-image: url('http://drinal.github.io/matrix-red.gif');
+	background-repeat: repeat-y;
+}
+
+.TEXT {
+	color: #CC0000;
+	font-family: -moz-fixed;
+	font-size: 16px;
+}
+
+.TYPEWRITER {
+	color: #CC0000;
+	font-family: -moz-fixed;
+	font-size: 16px;
+	display: none
+}
+
+.SHOW {
+	z-index: 2;
+}
+
+.HIDE {
+   z-index: 1;
+}
+
+.BUTTON {
+  color: #CC0000;
+  background-color: #000000;
+  border:1px solid #CC0000;
+ }
+ 
+</style>
+<!-- CSS BLOCK END -->
+
+
+<!-- JAVASCRIPT BLOCK BEGIN -->
+<script type="text/javascript">
+
+	// Alert Messages
+	alert('404 Error!')
+</script>
+
+<script type="text/javascript">
+    // Anti-leach script    
+
+    var message="Need right click on 404 page? LOL!";
+
+    function clickIE4(){
+    if (event.button==2){
+    alert(message);
+    return false;
+    }
+    }
+
+    function clickNS4(e){
+    if (document.layers||document.getElementById&&!document.all){
+    if (e.which==2||e.which==3){
+    alert(message);
+    return false;
+    }
+    }
+    }
+
+    if (document.layers){
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown=clickNS4;
+    }
+    else if (document.all&&!document.getElementById){
+    document.onmousedown=clickIE4;
+    }
+
+    document.oncontextmenu=new Function("alert(message);return false")
+</script>
+
+<script type="text/javascript">
+
+		// Typewriter Text
+    	TypingText = function(element, interval, cursor, finishedCallback) {
+			  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+				this.running = true;	// Never run.
+				return;
+			  }
+			  this.element = element;
+			  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+			  this.interval = (typeof interval == "undefined" ? 100 : interval);
+			  this.origText = this.element.innerHTML;
+			  this.unparsedOrigText = this.origText;
+			  this.cursor = (cursor ? cursor : "");
+			  this.currentText = "";
+			  this.currentChar = 0;
+			  this.element.typingText = this;
+			  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+			  TypingText.all.push(this);
+			  this.running = false;
+			  this.inTag = false;
+			  this.tagBuffer = "";
+			  this.inHTMLEntity = false;
+			  this.HTMLEntityBuffer = "";
+			}
+			TypingText.all = new Array();
+			TypingText.currentIndex = 0;
+			TypingText.runAll = function() {
+			  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+			}
+			TypingText.prototype.run = function() {
+			  if(this.running) return;
+			  if(typeof this.origText == "undefined") {
+				setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);	// We haven't finished loading yet.  Have patience.
+				return;
+			  }
+			  if(this.currentText == "") this.element.innerHTML = "";
+			//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
+			  if(this.currentChar < this.origText.length) {
+				if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+				  this.tagBuffer = "<";
+				  this.inTag = true;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+				  this.tagBuffer += ">";
+				  this.inTag = false;
+				  this.currentText += this.tagBuffer;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.inTag) {
+				  this.tagBuffer += this.origText.charAt(this.currentChar);
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+				  this.HTMLEntityBuffer = "&";
+				  this.inHTMLEntity = true;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+				  this.HTMLEntityBuffer += ";";
+				  this.inHTMLEntity = false;
+				  this.currentText += this.HTMLEntityBuffer;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.inHTMLEntity) {
+				  this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else {
+				  this.currentText += this.origText.charAt(this.currentChar);
+				}
+				this.element.innerHTML = this.currentText;
+				this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+				this.currentChar++;
+				setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+			  } else {
+				this.currentText = "";
+				this.currentChar = 0;
+					this.running = false;
+					this.finishedCallback();
+			  }
+			}
+</script>
+<!-- JAVASCRIPT BLOCK END -->
+
+<title>404 Error</title>
+
+<div class="MATRIX-LEFT"> </div>
+
+
+<div class="MATRIX-RIGHT"> </div> 
+
+<div id="DEFACE" class="SHOW">
+
+<center>
+
+<br> <br>
+
+<div id="TEXTBOX">
+
+<span class="TEXT"> <marquee loop="TRUE" direction="RIGHT"> ################################################################################################## </marquee> </span>
+
+<br> <br>
+
+<span class="TYPEWRITER" id="M1">404 - Not Found</span>
+
+<br>
+
+<span class="TYPEWRITER" id="M2">The page does not exist on this path.</span>
+
+<br> <br>
+
+<span class="TYPEWRITER" id="M3">If you think you encountered this page in error</span>
+
+<BR>
+
+<span class="TYPEWRITER" id="M4">Contact Drinal</span>
+
+<br> <br>
+
+<span class="TEXT"> <marquee loop="TRUE" direction="LEFT"> ################################################################################################## </marquee> </span>
+
+</div>
+
+<br>
+
+<span class="TYPEWRITER" id="M5">We have been automailed and will review this error soon!</span> 
+
+<br>
+
+<span class="TYPEWRITER" id="M6">Beep boop beep boop</span>
+
+<br>
+
+<br>
+
+<br>
+
+<span class="TYPEWRITER" id="M7"> Join http://drinal.github.io </span>
+
+<br>
+
+<span class="TYPEWRITER" id="M8">lkjlkjljlkj</span>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<input class="BUTTON" action="action" type="button" value="Go Back" onclick="history.go(-1);" />
+
+</center>
+
+</div>
+
+<!-- JAVASCRIPT BLOCK BEGIN -->
+<script type="text/javascript">
+			new TypingText(document.getElementById("M1"));
+			new TypingText(document.getElementById("M2"));
+			new TypingText(document.getElementById("M3"));
+			new TypingText(document.getElementById("M4"));
+			new TypingText(document.getElementById("M5"));
+			new TypingText(document.getElementById("M6"));
+			new TypingText(document.getElementById("M7"));
+			new TypingText(document.getElementById("M8"));
+			setTimeout(function(){document.getElementById("M1").style.display = 'inline';TypingText.all[0].run();},0);
+			setTimeout(function(){document.getElementById("M2").style.display = 'inline';TypingText.all[1].run();},5000);
+			setTimeout(function(){document.getElementById("M3").style.display = 'inline';TypingText.all[2].run();},10000);
+			setTimeout(function(){document.getElementById("M4").style.display = 'inline';TypingText.all[3].run();},15000);
+			setTimeout(function(){document.getElementById("M5").style.display = 'inline';TypingText.all[4].run();},20000);
+			setTimeout(function(){document.getElementById("M6").style.display = 'inline';TypingText.all[5].run();},22000);
+			setTimeout(function(){document.getElementById("M7").style.display = 'inline';TypingText.all[6].run();},22000);
+			setTimeout(function(){document.getElementById("M8").style.display = 'inline';TypingText.all[7].run();},25000);
+		</script>
+<!-- JAVASCRIPT BLOCK END -->
+
+<!-- BEGIN REDIRECT -->
+<meta http-equiv="refresh" content="60;URL=http://drinal.github.io/main.html">
+<!-- END REDIRECT -->
 </html>
